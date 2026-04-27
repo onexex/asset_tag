@@ -1,0 +1,7 @@
+flutter_native_splash:
+  color: "#ffffff" # O kahit anong background color na gusto mo
+  image: assets/logo.png # Siguraduhin na may logo ka sa folder na ito
+  android_12:
+    image: assets/logo.png
+    color: "#ffffff"
+  fullscreen: true
