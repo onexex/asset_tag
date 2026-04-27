@@ -1,0 +1,16 @@
+workflows:
+  ios-build:
+    name: Asset View iOS Build
+    instance_type: mac_mini_m1
+    max_build_duration: 60
+    environment:
+      flutter: stable
+      xcode: latest
+    scripts:
+      - name: Install dependencies
+        script: flutter pub get
+      - name: Build iOS (No Code Signing)
+        # Gagamit tayo ng --no-codesign dahil nasa Windows tayo at wala pang certificate
+        script: flutter build ios --release --no-codesign
+    artifacts:
+      - build/ios/iphoneos/*.app
