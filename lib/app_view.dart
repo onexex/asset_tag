@@ -27,20 +27,17 @@ class _AppViewState extends State<AppView> {
           },
         ),
       )
-      ..loadRequest(Uri.parse('https://ad0d-126-209-8-34.ngrok-free.app/Capstone-System/login.php'));  
+      ..loadRequest(Uri.parse('https://d8ef-126-209-8-34.ngrok-free.app/Capstone-System/login.php'));  
   }
  
  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      // Tinanggal ang AppBar para Full Screen look
-      body: SafeArea(
-        // Ang SafeArea ang bahala para hindi matakpan ng notch ang web app mo
+    return Scaffold( 
+      body: SafeArea( 
         child: Stack(
           children: [
             WebViewWidget(controller: _controller),
-            
-            // Loading indicator na minimal
+ 
             if (_isLoading)
               const Center(
                 child: CircularProgressIndicator(),

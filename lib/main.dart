@@ -17,7 +17,7 @@ class AssetWebViewApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
-        // Bagay ang Deep Purple o Blue kung industrial/tech ang vibe
+       
         colorSchemeSeed: Colors.blueAccent, 
       ),
       home: const AppView(),
