@@ -27,7 +27,7 @@ class _AppViewState extends State<AppView> {
           },
         ),
       )
-      ..loadRequest(Uri.parse('https://d8ef-126-209-8-34.ngrok-free.app/Capstone-System/login.php'));  
+      ..loadRequest(Uri.parse('https://facebook.com/'));  
   }
  
  @override
