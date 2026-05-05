@@ -27,7 +27,7 @@ class _AppViewState extends State<AppView> {
           },
         ),
       )
-      ..loadRequest(Uri.parse('https://facebook.com/'));  
+      ..loadRequest(Uri.parse('https://inspiro.infinityfreeapp.com/'));  
   }
  
  @override
